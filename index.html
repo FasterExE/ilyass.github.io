@@ -20,9 +20,11 @@
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         .container {
             text-align: center;
         }
+
         h1 {
             font-size: 48px;
             font-weight: bold;
@@ -30,30 +32,37 @@
             margin-bottom: 20px;
             color: #e6a700;
         }
+
         .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 150%;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
         }
+
         p {
             font-size: 24px;
             margin-top: 0;
             line-height: 1.5;
             color: #ffffff;
         }
+
         a {
             text-decoration: none;
             color: #fff;
             transition: color 0.3s;
         }
+
         a:hover {
             color: #fff;
         }
-        .button {
+
+        /* تنسيق زر واتساب */
+        .whatsapp-button {
             display: inline-block;
             padding: 10px 20px;
+            background-color: #25D366;
             color: #fff;
             text-decoration: none;
             font-size: 20px;
@@ -62,45 +71,126 @@
             transition: background-color 0.3s;
             margin-bottom: 10px;
         }
-        .telegram-button {
-            background-color: #0088CC;
-        }
-        .telegram-button:hover {
-            background-color: #0077B5;
-        }
-        .whatsapp-button {
-            background-color: #25D366;
-        }
+
         .whatsapp-button:hover {
             background-color: #128C7E;
         }
-        .facebook-button {
-            background-color: #3b5998;
+
+        /* تنسيق زر تلجرام */
+        .telegram-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0088CC;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+            margin-left: 10px; /* وضع الزر على يسار زر الواتساب */
         }
+
+        .telegram-button:hover {
+            background-color: #0077B5;
+        }
+
+        /* تنسيق زر فيسبوك */
+        .facebook-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3b5998;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
         .facebook-button:hover {
             background-color: #2d4373;
         }
+
+        /* تنسيق زر إنستجرام */
         .instagram-button {
+            display: inline-block;
+            padding: 10px 20px;
             background-color: #E4405F;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+            margin-left: 10px; /* وضع الزر على يسار زر الفيسبوك */
         }
+
         .instagram-button:hover {
             background-color: #D81B60;
         }
+
+        /* تنسيق زر جيتهب */
         .github-button {
+            display: inline-block;
+            padding: 10px 20px;
             background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
         }
+
         .github-button:hover {
             background-color: #6e5494;
         }
+
         .icon {
             font-size: 24px;
             margin-right: 5px;
         }
+
         .button-pair {
             display: inline-block;
             margin: 10px;
         }
     </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #ffffff;">ILYASS SERVER</h1>
+        
+        <!-- إضافة الصورة الدائرية بحجم أكبر -->
+        <img src="images/profile.jpg" alt="Profile" class="profile-img">
+        
+        <p>Fast and stable servers developed by ILYASS NAJHI. 100% Moroccan.</p>
+
+        <!-- زر واتساب وتلجرام -->
+        <div class="button-pair">
+            <a class="whatsapp-button" href="https://wa.me/+41762298622"><i class="fab fa-whatsapp icon"></i> WhatsApp</a>
+            <a class="telegram-button" href="https://t.me/IlyassExE"><i class="fab fa-telegram-plane icon"></i> Telegram</a>
+        </div>
+        
+        <!-- زر فيسبوك وإنستجرام -->
+        <div class="button-pair">
+            <a class="facebook-button" href="https://www.facebook.com/najhi.ilyass"><i class="fab fa-facebook-f icon"></i> Facebook</a>
+            <a class="instagram-button" href="https://www.instagram.com/ilyass.dev"><i class="fab fa-instagram icon"></i> Instagram</a>
+        </div>
+        
+        <!-- زر جيتهب -->
+        <a class="github-button" href="https://github.com/FasterExE"><i class="fab fa-github icon"></i> GitHub</a>
+
+        <footer style="text-align: center; background-color: ; color: #fff; padding: 10px;">
+            &copy; 2024 ILYASS DEV
+        </footer>
+    </div>
+
+    <!-- تعطيل النسخ والقص -->
     <script>
         document.addEventListener("copy", function (e) {
             e.preventDefault();
@@ -112,33 +202,5 @@
             alert("قص النص ممنوع!");
         });
     </script>
-</head>
-<body>
-    <div class="container">
-        <h1 style="color: #ffffff;">ILYASS SERVER</h1>
-        
-        <!-- إضافة الصورة الدائرية -->
-        <img src="images/profile.jpg" alt="Profile" class="profile-img">
-        
-        <p>Fast and stable servers developed by ILYASS NAJHI. 100% Moroccan.</p>
-
-        <!-- زر واتساب وتلجرام -->
-        <div class="button-pair">
-            <a class="telegram-button button" href="https://t.me/IlyassExE"><i class="fab fa-telegram-plane icon"></i> Telegram</a>
-            <a class="whatsapp-button button" href="https://wa.me/+41762298622"><i class="fab fa-whatsapp icon"></i> WhatsApp</a>
-        </div>
-        
-        <!-- زر فيسبوك وإنستجرام -->
-        <div class="button-pair">
-            <a class="instagram-button button" href="https://www.instagram.com/ilyass.dev"><i class="fab fa-instagram icon"></i> Instagram</a>
-            <a class="facebook-button button" href="https://www.facebook.com/najhi.ilyass"><i class="fab fa-facebook-f icon"></i> Facebook</a>
-        </div>
-        
-        <a class="github-button button" href="https://github.com/FasterExE"><i class="fab fa-github icon"></i> GitHub</a>
-
-        <footer style="text-align: center; background-color: ; color: #fff; padding: 10px;">
-            &copy; 2024 ILYASS DEV
-        </footer>
-    </div>
 </body>
 </html>
