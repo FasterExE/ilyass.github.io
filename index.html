@@ -44,55 +44,50 @@
         a:hover {
             color: #fff;
         }
-        .telegram-button {
+        .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #0088CC;
             color: #fff;
             text-decoration: none;
             font-size: 20px;
             border-radius: 5px;
             margin-top: 20px;
             transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+        .telegram-button {
+            background-color: #0088CC;
         }
         .telegram-button:hover {
             background-color: #0077B5;
         }
         .whatsapp-button {
-            display: inline-block;
-            padding: 10px 20px;
             background-color: #25D366;
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
         }
         .whatsapp-button:hover {
             background-color: #128C7E;
         }
-        .telegram-icon {
-            font-size: 24px;
-            margin-right: 5px;
+        .facebook-button {
+            background-color: #3b5998;
         }
-        .whatsapp-icon {
-            font-size: 24px;
-            margin-right: 5px;
+        .facebook-button:hover {
+            background-color: #2d4373;
+        }
+        .instagram-button {
+            background-color: #E4405F;
+        }
+        .instagram-button:hover {
+            background-color: #D81B60;
         }
         .github-button {
-            display: inline-block;
-            padding: 10px 20px;
             background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
         }
         .github-button:hover {
             background-color: #6e5494;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 5px;
         }
     </style>
     <script>
@@ -111,9 +106,13 @@
     <div class="container">
         <h1 style="color: #ffffff;">ILYASS SERVER</h1>
         <p>Fast and stable servers developed by ILYASS NAJHI. 100% Moroccan.</p>
-        <a class="telegram-button" href="https://t.me/IlyassExE"><i class="fab fa-telegram-plane telegram-icon"></i> Telegram</a>
-        <a class="whatsapp-button" href="https://wa.me/+41762298622"><i class="fab fa-whatsapp whatsapp-icon"></i> WhatsApp</a>
-        <a class="github-button" href="https://github.com/FasterExE"><i class="fab fa-github"></i> GitHub</a>
+
+        <a class="whatsapp-button button" href="https://wa.me/+41762298622"><i class="fab fa-whatsapp icon"></i> WhatsApp</a><br>
+        <a class="telegram-button button" href="https://t.me/IlyassExE"><i class="fab fa-telegram-plane icon"></i> Telegram</a><br>
+        <a class="facebook-button button" href="https://www.facebook.com/najhi.ilyass"><i class="fab fa-facebook-f icon"></i> Facebook</a><br>
+        <a class="instagram-button button" href="https://www.instagram.com/ilyass.dev"><i class="fab fa-instagram icon"></i> Instagram</a><br>
+        <a class="github-button button" href="https://github.com/FasterExE"><i class="fab fa-github icon"></i> GitHub</a>
+
         <footer style="text-align: center; background-color: ; color: #fff; padding: 10px;">
             &copy; 2024 ILYASS DEV
         </footer>
